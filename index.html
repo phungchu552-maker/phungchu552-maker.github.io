@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chử Văn Phụng | Thực tập sinh Thương mại Điện tử</title>
+  <meta name="description" content="Portfolio của Chử Văn Phụng — Cử nhân QTKD (UFM), kinh nghiệm vận hành đơn hàng, Shopee Seller, nội dung số. Ứng viên Thực tập sinh TMĐT." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#hero" class="logo">CVPhụng<span class="logo-dot">.</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#about"     class="nav-link">Giới thiệu</a></li>
+      <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+      <li><a href="#portfolio" class="nav-link">Ấn phẩm</a></li>
+      <li><a href="#skills"    class="nav-link">Kỹ năng</a></li>
+
+      <li><a href="#contact"   class="nav-link">Liên hệ</a></li>
+    </ul>
+
+    <a href="assets/cv/CV_ChuVanPhung.pdf" download class="btn btn-primary btn-cv">
+      <i data-lucide="download" class="btn-icon"></i>Tải CV
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Mở menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"      class="nav-link">Giới thiệu</a></li>
+      <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+      <li><a href="#portfolio"  class="nav-link">Ấn phẩm</a></li>
+      <li><a href="#skills"     class="nav-link">Kỹ năng</a></li>
+
+      <li><a href="#contact"    class="nav-link">Liên hệ</a></li>
+      <li><a href="assets/cv/CV_ChuVanPhung.pdf" download class="btn btn-primary" style="display:inline-flex;margin-top:.5rem">Tải CV</a></li>
+    </ul>
+  </div>
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+
+    <!-- Left: Text -->
+    <div class="hero-text fade-up">
+      <div class="hero-badge"><i data-lucide="graduation-cap" class="badge-mini-icon"></i> Cử nhân QTKD (UFM) · 2026</div>
+      <h1 class="hero-title">
+        Chử Văn<br/>
+        <span class="hero-title-accent">Phụng</span>
+      </h1>
+      <p class="hero-subtitle">
+        Cử nhân Quản trị Kinh doanh · Đại học Tài chính - Marketing (UFM)<br/>
+        <span class="highlight">Thực tập sinh Thương mại Điện tử</span>
+      </p>
+      <p class="hero-desc">
+        Tôi mang tư duy kinh doanh nền tảng vào thực chiến TMĐT, từ vận hành đơn hàng đa kênh, tối ưu listing Shopee, đến sản xuất nội dung thương hiệu trên TikTok Shop & Social Commerce. Luôn sẵn sàng học nhanh và thực thi hiệu quả.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">
+          <i data-lucide="layout-grid" class="btn-icon"></i>Xem Ấn Phẩm
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">300+</span>
+          <span class="stat-label">Triệu VNĐ doanh thu đóng góp</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">SKU quản lý</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">15%</span>
+          <span class="stat-label">Tỷ lệ chuyển đổi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="hero-visual fade-up" style="animation-delay:.2s">
+      <div class="avatar-wrapper">
+        <img src="assets/images/personal/avatar.jpg" alt="Chử Văn Phụng" class="avatar-img" loading="eager" />
+        <div class="avatar-ring"></div>
+        <div class="avatar-badge-float">
+          <i data-lucide="shopping-bag"></i>
+          <span>E-commerce</span>
+        </div>
+      </div>
+      <div class="hero-card-float hero-card-1">
+        <i data-lucide="trending-up"></i>
+        <div>
+          <div class="card-float-title">300M+ VNĐ Revenue</div>
+          <div class="card-float-sub">Hato Group (Hato Case)</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>Cuộn xuống</span>
+    <i data-lucide="chevron-down" class="scroll-icon"></i>
+  </div>
+  <div class="hero-bg-gradient"></div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════════════════════ -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Về Tôi</div>
+      <h2 class="section-title">Hành trình & Tư duy TMĐT</h2>
+    </div>
+    <div class="about-grid">
+
+      <!-- Text -->
+      <div class="about-text fade-up">
+        <p class="about-lead">
+          Tốt nghiệp chuyên ngành <strong>Quản trị Kinh doanh tại Đại học Tài chính - Marketing (UFM)</strong>, tôi được trang bị nền tảng bài bản về phân tích thị trường, hành vi khách hàng và quản trị vận hành.
+        </p>
+        <p class="about-body">
+          Qua quá trình trực tiếp đảm nhiệm vai trò <strong>Trợ lý Vận hành & Bán hàng</strong> tại Nhung Đồ Thái Lan Order và Hato Group, tôi đã làm quen với nhịp độ xử lý đơn hàng thực tế, tư vấn chốt sale, tối ưu hình ảnh sản phẩm bằng AI và kiểm soát tồn kho. Tôi mong muốn mang tinh thần chủ động, ham học hỏi cùng kỹ năng thực thi sẵn có để hỗ trợ đội ngũ vận hành hiệu quả.
+        </p>
+        <div class="mindset-cards">
+          <div class="mindset-card">
+            <div class="mindset-icon"><i data-lucide="target"></i></div>
+            <div>
+              <div class="mindset-title">Tư duy Khách hàng</div>
+              <p>Duy trì CR 15%, phản hồi dưới 3 phút, giữ 70+ đơn/tháng qua tư vấn trực tiếp.</p>
+            </div>
+          </div>
+          <div class="mindset-card">
+            <div class="mindset-icon"><i data-lucide="package-check"></i></div>
+            <div>
+              <div class="mindset-title">Vận hành Đa kênh</div>
+              <p>Xử lý 30–50 đơn/ngày qua Pancake & POS, đối soát vận đơn 3PL, tỷ lệ giao đúng hẹn 100%.</p>
+            </div>
+          </div>
+          <div class="mindset-card">
+            <div class="mindset-icon"><i data-lucide="wand-2"></i></div>
+            <div>
+              <div class="mindset-title">Nội dung & Hình ảnh</div>
+              <p>Dùng AI và Prompt Engineering tối ưu ảnh sản phẩm thô thành ảnh thương mại studio, thu hút 400+ lượt hỏi hàng/tháng.</p>
+            </div>
+          </div>
+          <div class="mindset-card">
+            <div class="mindset-icon"><i data-lucide="bar-chart-3"></i></div>
+            <div>
+              <div class="mindset-title">Dữ liệu & Excel</div>
+              <p>MOS Excel 907 (Microsoft Certified) · Tự lập file quản lý khách hàng, theo dõi tồn kho và phân tích số liệu bán hàng.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="about-visual fade-up" style="animation-delay:.15s">
+        <div class="about-img-block">
+          <img src="assets/images/personal/event1.jpg" alt="Chử Văn Phụng tại INZONE Arena 2026" class="about-img" loading="lazy" />
+          <div class="about-img-label">
+            <i data-lucide="map-pin"></i>
+            INZONE Arena 2026 · TP. Hồ Chí Minh
+          </div>
+        </div>
+        <div class="about-edu-card">
+          <div class="about-edu-icon"><i data-lucide="graduation-cap"></i></div>
+          <div class="about-edu-info">
+            <div class="about-edu-degree">Cử nhân Quản trị Kinh doanh</div>
+            <div class="about-edu-school">Đại học Tài chính - Marketing (UFM) · 2022 – 2026</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     WORK EXPERIENCE
+══════════════════════════════════════════════════════════ -->
+<section class="experience section" id="experience">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Kinh Nghiệm</div>
+      <h2 class="section-title">Thực chiến & Thành tích</h2>
+      <p class="section-desc">Những vị trí tôi đã đảm nhiệm — với số liệu thực tế, không phải lý thuyết.</p>
+    </div>
+    <div class="exp-timeline">
+
+      <!-- Job 1 -->
+      <div class="exp-card fade-up">
+        <div class="exp-header">
+          <div class="exp-company-icon"><i data-lucide="shopping-bag"></i></div>
+          <div class="exp-header-text">
+            <h3 class="exp-company">Nhung Đồ Thái Lan Order</h3>
+            <div class="exp-role">Trợ lý Bán hàng & Vận hành Đơn hàng</div>
+          </div>
+          <div class="exp-period">12/2025 – 04/2026</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-achievements exp-achievements--three">
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="camera"></i></div>
+              <div>
+                <div class="exp-ach-title">Sản xuất Nội dung & Tối ưu Hình ảnh Sản phẩm</div>
+                <p>Quản lý danh mục <strong>50+ mã hàng/SKU</strong> (đăng tải <strong>10–15 bài/tuần</strong>); trực tiếp viết mô tả và ứng dụng <strong>AI (Prompt Engineering)</strong> xử lý ảnh sản phẩm thô thành ảnh thương mại chuẩn studio/lifestyle, thu hút <strong>400+ lượt tin nhắn hỏi hàng/tháng</strong>.</p>
+              </div>
+            </div>
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="message-square"></i></div>
+              <div>
+                <div class="exp-ach-title">Tư vấn & Chốt đơn</div>
+                <p>Trực tiếp giải đáp thắc mắc qua tin nhắn, duy trì <strong>tỷ lệ chuyển đổi (CR) 15%</strong>, chốt <strong>70+ đơn/tháng</strong>.</p>
+              </div>
+            </div>
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="package"></i></div>
+              <div>
+                <div class="exp-ach-title">Quản lý Đơn hàng & Tồn kho</div>
+                <p>Theo dõi quy trình đặt trước (Pre-order) từ xác nhận cọc, kiểm đếm tồn kho đến đóng gói giao nhận, đảm bảo <strong>100% đơn hàng giao đúng hẹn</strong>, không lệch kho hay sót đơn.</p>
+              </div>
+            </div>
+          </div>
+          <div class="exp-tags">
+            <span>Quản lý SKU</span><span>AI Image Generation</span><span>Prompt Engineering</span><span>Pre-order</span><span>Tối ưu hình ảnh</span><span>Tư vấn chốt đơn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="exp-card fade-up" style="animation-delay:.1s">
+        <div class="exp-header">
+          <div class="exp-company-icon"><i data-lucide="smartphone"></i></div>
+          <div class="exp-header-text">
+            <h3 class="exp-company">Hato Group — Dự án Hato Case (hatocase.com)</h3>
+            <div class="exp-role">Nhân viên Chăm sóc Khách hàng & Vận hành Đơn hàng</div>
+          </div>
+          <div class="exp-period">06/2025 – 12/2025</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-achievements">
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="shopping-cart"></i></div>
+              <div>
+                <div class="exp-ach-title">Vận hành Đơn hàng Đa kênh</div>
+                <p>Tiếp nhận và xử lý trung bình <strong>30–50 đơn hàng/ngày</strong> trên hệ thống <strong>Pancake & POS</strong>; kiểm soát luồng đơn từ xác nhận mẫu, chuyển file thiết kế xuống xưởng in đến đối soát mã vận đơn với <strong>3PL</strong>.</p>
+              </div>
+            </div>
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="headphones"></i></div>
+              <div>
+                <div class="exp-ach-title">Tư vấn Bán hàng B2C/B2B</div>
+                <p>Giải đáp trung bình <strong>80–100 cuộc hội thoại/ca</strong>, duy trì <strong>thời gian phản hồi dưới 3 phút</strong>; đóng góp trực tiếp <strong>hơn 300.000.000 VNĐ</strong> vào tổng doanh thu <strong>trong 7 tháng làm việc</strong>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="exp-tags">
+            <span>Pancake</span><span>POS System</span><span>Đối soát 3PL</span><span>E-commerce Operations</span><span>B2C/B2B CSKH</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="exp-card fade-up" style="animation-delay:.2s">
+        <div class="exp-header">
+          <div class="exp-company-icon"><i data-lucide="rocket"></i></div>
+          <div class="exp-header-text">
+            <h3 class="exp-company">Dự án Cá nhân: Kinh doanh Tự do – Tài khoản & Phần mềm Premium</h3>
+            <div class="exp-role">Tự vận hành & Quản lý Đơn hàng</div>
+          </div>
+          <div class="exp-period">05/2026 – 09/2026</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-achievements">
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="trending-up"></i></div>
+              <div>
+                <div class="exp-ach-title">Tìm nguồn cung & Chốt đơn</div>
+                <p>Chủ động tìm nguồn cung, tính giá vốn và đăng bài trên mạng xã hội; bán thành công <strong>100+ gói tài khoản</strong> (trung bình <strong>20–25 đơn/tháng</strong>) với <strong>tỷ lệ chuyển đổi tin nhắn đạt 20%</strong>.</p>
+              </div>
+            </div>
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="line-chart"></i></div>
+              <div>
+                <div class="exp-ach-title">Quản lý Dữ liệu & Giữ chân Khách hàng</div>
+                <p>Tự lập file <strong>Excel</strong> quản lý dữ liệu khách hàng, theo dõi hạn dùng để nhắc lịch và hỗ trợ bảo hành kỹ thuật trong vòng <strong>15 phút</strong>, giữ chân <strong>30% khách hàng cũ</strong> gia hạn.</p>
+              </div>
+            </div>
+          </div>
+          <div class="exp-tags">
+            <span>Excel CRM</span><span>Social Commerce</span><span>Tính giá vốn</span><span>Customer Retention</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="exp-card fade-up" style="animation-delay:.3s">
+        <div class="exp-header">
+          <div class="exp-company-icon"><i data-lucide="coffee"></i></div>
+          <div class="exp-header-text">
+            <h3 class="exp-company">Dự án Môn học: "Nắng Hạ Trà"</h3>
+            <div class="exp-role">Thành viên Vận hành & Bán hàng (Dự án nhóm UFM)</div>
+          </div>
+          <div class="exp-period">10/2024 – 11/2024</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-achievements">
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="share-2"></i></div>
+              <div>
+                <div class="exp-ach-title">Xây dựng & Quản trị Fanpage</div>
+                <p>Lập và quản trị Fanpage từ đầu; trực tiếp lên ý tưởng, chụp ảnh, quay dựng <strong>12+ video ngắn/bài đăng</strong> giới thiệu sản phẩm trong 3 tuần triển khai.</p>
+              </div>
+            </div>
+            <div class="exp-achievement">
+              <div class="exp-ach-icon"><i data-lucide="boxes"></i></div>
+              <div>
+                <div class="exp-ach-title">Vận hành Bán hàng Đa kênh</div>
+                <p>Thực hiện bán hàng đa kênh (online & offline), đối soát thu chi, bán ra <strong>300 ly</strong>, đạt tổng doanh thu <strong>7.500.000 VNĐ</strong>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="exp-tags">
+            <span>Fanpage Management</span><span>CapCut</span><span>Bán hàng đa kênh</span><span>Đối soát thu chi</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     PORTFOLIO
+══════════════════════════════════════════════════════════ -->
+<section class="portfolio section" id="portfolio">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Ấn Phẩm</div>
+      <h2 class="section-title">Trưng Bày Tác Phẩm</h2>
+      <p class="section-desc">Những ấn phẩm tôi thực hiện — thể hiện tư duy hình ảnh & khả năng sáng tạo nội dung số cho TMĐT.</p>
+    </div>
+
+    <div class="portfolio-filters fade-up">
+      <button class="filter-btn active" data-filter="all">Tất cả (<span id="filterCountAll">8</span>)</button>
+      <button class="filter-btn" data-filter="product">Ảnh Sàn TMĐT (1:1) (<span id="filterCountProduct">5</span>)</button>
+      <button class="filter-btn" data-filter="social">Banner & Social (<span id="filterCountSocial">3</span>)</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+      <!-- Rendered by JS from data.js -->
+    </div>
+
+    <div class="portfolio-notice fade-up">
+      <i data-lucide="sparkles"></i>
+      <span>Tất cả ấn phẩm đều được thực hiện từ <strong>ảnh chụp thực tế</strong> (điều kiện ánh sáng thô) và tối ưu hóa thành <strong>ảnh thương mại studio chuẩn sàn</strong> bằng công nghệ AI (Prompt Engineering) & Photoshop.</span>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ấn phẩm chi tiết">
+  <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Đóng">
+      <i data-lucide="x"></i>
+    </button>
+    <button class="lightbox-prev" onclick="prevItem()" aria-label="Trước">
+      <i data-lucide="chevron-left"></i>
+    </button>
+    <button class="lightbox-next" onclick="nextItem()" aria-label="Tiếp theo">
+      <i data-lucide="chevron-right"></i>
+    </button>
+    <div class="lightbox-body">
+      <div class="lightbox-img-wrap">
+        <div class="lightbox-img-tabs" id="lightboxImgTabs">
+          <!-- Rendered dynamically by main.js based on item.gallery -->
+        </div>
+        <div class="lightbox-image-container">
+          <span class="lightbox-img-badge badge-result" id="lightboxImgBadge">Kết Quả Studio</span>
+          <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+        </div>
+      </div>
+      <div class="lightbox-info">
+        <span class="portfolio-tag" id="lightboxTag"></span>
+        <h3 class="lightbox-title" id="lightboxTitle"></h3>
+        <div class="lightbox-meta">
+          <div class="meta-item">
+            <i data-lucide="target"></i>
+            <div>
+              <div class="meta-label">Mục tiêu ấn phẩm</div>
+              <div class="meta-value" id="lightboxGoal"></div>
+            </div>
+          </div>
+          <div class="meta-item">
+            <i data-lucide="wrench"></i>
+            <div>
+              <div class="meta-label">Công cụ thực hiện</div>
+              <div class="meta-value" id="lightboxTools"></div>
+            </div>
+          </div>
+          <div class="meta-item">
+            <i data-lucide="shopping-cart"></i>
+            <div>
+              <div class="meta-label">Ứng dụng vào TMĐT</div>
+              <div class="meta-value" id="lightboxEcom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lightbox-nav-dots" id="lightboxDots"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════════════════════ -->
+<section class="skills section" id="skills">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Kỹ Năng</div>
+      <h2 class="section-title">Bộ Công cụ & Năng lực</h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-group fade-up">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i data-lucide="shopping-bag"></i></div>
+          <h3>Vận hành TMĐT</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--accent">Shopee Seller Center</span>
+          <span class="skill-tag skill-tag--accent">TikTok Shop</span>
+          <span class="skill-tag">Combo · Mua kèm deal sốc</span>
+          <span class="skill-tag">Freeship Extra</span>
+          <span class="skill-tag">Tối ưu listing SEO</span>
+          <span class="skill-tag">Flash Sale · Voucher</span>
+          <span class="skill-tag">Shopee Ads cơ bản</span>
+          <span class="skill-tag">Nghiên cứu từ khóa</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up" style="animation-delay:.08s">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i data-lucide="truck"></i></div>
+          <h3>Vận hành Đơn hàng</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--accent">Pancake</span>
+          <span class="skill-tag skill-tag--accent">POS System</span>
+          <span class="skill-tag">3PL tracking</span>
+          <span class="skill-tag">Quản lý tồn kho</span>
+          <span class="skill-tag">Pre-order flow</span>
+          <span class="skill-tag">Đối soát vận đơn</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up" style="animation-delay:.16s">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i data-lucide="palette"></i></div>
+          <h3>Thiết kế & Nội dung Số</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--accent">Canva</span>
+          <span class="skill-tag skill-tag--accent">CapCut</span>
+          <span class="skill-tag skill-tag--accent">Adobe Photoshop</span>
+          <span class="skill-tag skill-tag--accent">AI Image Generation</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">Video Short-form</span>
+          <span class="skill-tag">Ảnh sản phẩm studio</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up" style="animation-delay:.24s">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i data-lucide="bar-chart-2"></i></div>
+          <h3>Văn phòng & Dữ liệu</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--accent">MS Excel (MOS 907)</span>
+          <span class="skill-tag skill-tag--accent">MS Word (MOS 906)</span>
+          <span class="skill-tag">Google Sheets</span>
+          <span class="skill-tag">PowerPoint</span>
+          <span class="skill-tag">Google Workspace</span>
+          <span class="skill-tag">Báo cáo bán hàng</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up" style="animation-delay:.32s">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i data-lucide="briefcase"></i></div>
+          <h3>Tư duy Kinh doanh</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Phân tích thị trường</span>
+          <span class="skill-tag">Hành vi khách hàng</span>
+          <span class="skill-tag">Chiến lược giá</span>
+          <span class="skill-tag">Tư duy sản phẩm</span>
+          <span class="skill-tag">Kế hoạch Marketing</span>
+          <span class="skill-tag">Nghiên cứu đối thủ</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-up" style="animation-delay:.4s">
+        <div class="skill-group-header">
+          <div class="skill-group-icon"><i data-lucide="globe"></i></div>
+          <h3>Chứng chỉ & Ngoại ngữ</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--accent">IELTS 5.5</span>
+          <span class="skill-tag skill-tag--accent">VSTEP B2</span>
+          <span class="skill-tag skill-tag--accent">Google Digital Marketing</span>
+          <span class="skill-tag">MOS Excel 907</span>
+          <span class="skill-tag">MOS Word 906</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certifications highlight -->
+    <div class="certs-highlight fade-up">
+      <div class="cert-card">
+        <div class="cert-icon"><i data-lucide="award"></i></div>
+        <div class="cert-info">
+          <div class="cert-name">MOS Excel</div>
+          <div class="cert-score">907 điểm</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i data-lucide="file-text"></i></div>
+        <div class="cert-info">
+          <div class="cert-name">MOS Word</div>
+          <div class="cert-score">906 điểm</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i data-lucide="languages"></i></div>
+        <div class="cert-info">
+          <div class="cert-name">IELTS</div>
+          <div class="cert-score">5.5 Band</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i data-lucide="badge-check"></i></div>
+        <div class="cert-info">
+          <div class="cert-name">Google Digital Marketing</div>
+          <div class="cert-score">10/2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════════════════ -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Liên Hệ</div>
+      <h2 class="section-title">Thông tin Liên hệ</h2>
+      <p class="section-desc">Cảm ơn anh/chị bộ phận Tuyển dụng đã dành thời gian xem qua hồ sơ của em. Em rất mong có cơ hội được trao đổi và đồng hành cùng quý công ty trong thời gian tới!</p>
+    </div>
+    <div class="contact-grid">
+
+      <!-- Info Card (Centered 1-Column) -->
+      <div class="contact-info fade-up">
+        <div class="contact-item">
+          <div class="contact-icon"><i data-lucide="mail"></i></div>
+          <div class="contact-detail">
+            <div class="contact-label">Email</div>
+            <div class="contact-value-wrap">
+              <span class="contact-value" id="emailVal" data-email="phungchu552@gmail.com">phungchu552@gmail.com</span>
+              <button class="copy-btn" onclick="copyEmail()" title="Sao chép email">
+                <i data-lucide="copy" id="copyIcon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i data-lucide="phone"></i></div>
+          <div class="contact-detail">
+            <div class="contact-label">Điện thoại / Zalo</div>
+            <div class="contact-value-wrap">
+              <span class="contact-value" id="phoneVal">0902 596 732</span>
+              <button class="copy-btn" onclick="copyPhone()" title="Sao chép số điện thoại">
+                <i data-lucide="copy" id="copyPhoneIcon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+          <div class="contact-detail">
+            <div class="contact-label">Địa chỉ</div>
+            <div class="contact-value">Tân Phú, TP. Hồ Chí Minh</div>
+          </div>
+        </div>
+        <a href="assets/cv/CV_ChuVanPhung.pdf" download class="btn btn-primary btn-block">
+          <i data-lucide="download" class="btn-icon"></i>Tải CV đầy đủ (PDF)
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Về đầu trang">
+  <i data-lucide="arrow-up"></i>
+</button>
+
+<!-- Toast Notification -->
+<div class="toast" id="toastNotification" role="alert" aria-live="polite">
+  <i data-lucide="check-circle" class="toast-icon"></i>
+  <span class="toast-message">Đã sao chép vào bộ nhớ tạm!</span>
+</div>
+
+<script src="src/data.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
