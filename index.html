@@ -31,7 +31,7 @@
       <li><a href="#contact"   class="nav-link">Liên hệ</a></li>
     </ul>
 
-    <a href="assets/cv/CV_ChuVanPhung.pdf" download class="btn btn-primary btn-cv">
+    <a href="assets/cv/CV_ChuVanPhung.pdf?v=20261124_03" download="CV_ChuVanPhung.pdf" class="btn btn-primary btn-cv">
       <i data-lucide="download" class="btn-icon"></i>Tải CV
     </a>
 
@@ -48,7 +48,7 @@
       <li><a href="#skills"     class="nav-link">Kỹ năng</a></li>
 
       <li><a href="#contact"    class="nav-link">Liên hệ</a></li>
-      <li><a href="assets/cv/CV_ChuVanPhung.pdf" download class="btn btn-primary" style="display:inline-flex;margin-top:.5rem">Tải CV</a></li>
+      <li><a href="assets/cv/CV_ChuVanPhung.pdf?v=20261124_03" download="CV_ChuVanPhung.pdf" class="btn btn-primary" style="display:inline-flex;margin-top:.5rem">Tải CV</a></li>
     </ul>
   </div>
   <div class="scroll-progress-bar" id="scrollProgressBar"></div>
@@ -277,6 +277,52 @@
               </div>
             </div>
           </div>
+
+          <!-- Case Study: Quy trình vận hành thực tế Hato Case -->
+          <div class="exp-case-study">
+            <div class="case-study-header">
+              <span class="case-study-badge"><i data-lucide="workflow"></i> Case Study Vận hành Thực tế · Hato Case</span>
+            </div>
+            <div class="case-study-grid">
+              <div class="case-study-item case-study-item--full">
+                <div class="case-study-title">
+                  <i data-lucide="git-branch"></i>
+                  <span>1. Luồng Trạng thái Đơn hàng trên POS</span>
+                </div>
+                <div class="pos-flow" aria-label="Luồng trạng thái đơn hàng POS">
+                  <span class="pos-step">Mới</span>
+                  <i data-lucide="arrow-right" class="pos-arrow"></i>
+                  <span class="pos-step">Đã xác nhận</span>
+                  <i data-lucide="arrow-right" class="pos-arrow"></i>
+                  <span class="pos-step">Chờ in</span>
+                  <i data-lucide="arrow-right" class="pos-arrow"></i>
+                  <span class="pos-step">Đang đóng hàng</span>
+                  <i data-lucide="arrow-right" class="pos-arrow"></i>
+                  <span class="pos-step pos-step--end">Đã gửi hàng</span>
+                  <span class="pos-branch-divider">|</span>
+                  <span class="pos-step pos-step--branch">Nhánh: Đã đặt hàng</span>
+                </div>
+                <p class="case-study-desc">Kiểm soát chặt chẽ từng điểm chuyển giao (TVBH → Thiết kế/Xử lý file → Thợ in → QC/Đóng gói → 3PL). Các đơn thiếu thông tin, chờ chốt demo hoặc chờ phôi ốp được giữ ở nhánh <strong>Đã đặt hàng</strong> trước khi sang <strong>Đã xác nhận</strong>; từ bước <strong>Chờ in</strong> (đã xuất file in) trở đi sẽ khóa chỉnh sửa yêu cầu.</p>
+              </div>
+
+              <div class="case-study-item">
+                <div class="case-study-title">
+                  <i data-lucide="shield-check"></i>
+                  <span>2. Kiểm soát Lỗi Đầu vào (4G/5G & Xử lý trong 24h)</span>
+                </div>
+                <p class="case-study-desc">Đối chiếu chính xác tên dòng máy trên <strong>Danh sách ốp lưng</strong> (không viết tắt), xác minh rõ phiên bản <strong>4G / 5G</strong> (phân biệt bản dùng riêng, dùng chung 4G/5G hoặc tra cứu đối chiếu). Nếu Thiết kế gắn thẻ <em>"Cần kiểm lại dòng điện thoại"</em> và chuyển về <strong>Đã đặt hàng</strong>, TVBH chỉnh note chuẩn và xử lý dứt điểm đơn <strong>Mới / Đã đặt hàng</strong> trong ngày (không để quá <strong>24h</strong>).</p>
+              </div>
+
+              <div class="case-study-item">
+                <div class="case-study-title">
+                  <i data-lucide="bar-chart-3"></i>
+                  <span>3. Đo lường & Báo cáo KPI cuối ca / tuần</span>
+                </div>
+                <p class="case-study-desc"><strong>Cuối ca (Check-out):</strong> Trích xuất ảnh chụp kèm thời gian thực 3 chỉ số gồm <strong>Thời gian phản hồi TB</strong>, <strong>Tỷ lệ chốt đơn theo nhân viên</strong> (trên Pancake) và <strong>Doanh số cá nhân ngày</strong> (trên POS) vào Report Tổng Vận Hành. <strong>Hàng tuần:</strong> Review biến động KPI, tỷ lệ lỗi/bảo hành theo từng khâu (CSKH – Thiết kế – QC – 3PL) và đề xuất giải pháp.</p>
+              </div>
+            </div>
+          </div>
+
           <div class="exp-tags">
             <span>Pancake</span><span>POS System</span><span>Đối soát 3PL</span><span>E-commerce Operations</span><span>B2C/B2B CSKH</span>
           </div>
@@ -312,6 +358,12 @@
           </div>
           <div class="exp-tags">
             <span>Excel CRM</span><span>Social Commerce</span><span>Tính giá vốn</span><span>Customer Retention</span>
+          </div>
+          <div class="exp-doc-action">
+            <a href="assets/docs/CRM_QuanLyKhachHang_ChuVanPhung.xlsx" download class="exp-doc-link">
+              <i data-lucide="file-spreadsheet"></i>
+              <span>Xem file Excel CRM mẫu (.xlsx) ↓</span>
+            </a>
           </div>
         </div>
       </div>
@@ -365,7 +417,8 @@
     </div>
 
     <div class="portfolio-filters fade-up">
-      <button class="filter-btn active" data-filter="all">Tất cả (<span id="filterCountAll">8</span>)</button>
+      <button class="filter-btn active" data-filter="all">Tất cả (<span id="filterCountAll">9</span>)</button>
+      <button class="filter-btn" data-filter="ops">Vận hành & Thực tế (<span id="filterCountOps">1</span>)</button>
       <button class="filter-btn" data-filter="product">Ảnh Sàn TMĐT (1:1) (<span id="filterCountProduct">5</span>)</button>
       <button class="filter-btn" data-filter="social">Banner & Social (<span id="filterCountSocial">3</span>)</button>
     </div>
@@ -430,6 +483,7 @@
             </div>
           </div>
         </div>
+        <a id="lightboxDownloadBtn" href="#" download class="btn btn-outline" style="display:none; margin-top: 1rem;"><i data-lucide="file-spreadsheet" class="btn-icon"></i>Tải file Excel mẫu (.xlsx)</a>
         <div class="lightbox-nav-dots" id="lightboxDots"></div>
       </div>
     </div>
@@ -620,7 +674,7 @@
             <div class="contact-value">Tân Phú, TP. Hồ Chí Minh</div>
           </div>
         </div>
-        <a href="assets/cv/CV_ChuVanPhung.pdf" download class="btn btn-primary btn-block">
+        <a href="assets/cv/CV_ChuVanPhung.pdf?v=20261124_03" download="CV_ChuVanPhung.pdf" class="btn btn-primary btn-block">
           <i data-lucide="download" class="btn-icon"></i>Tải CV đầy đủ (PDF)
         </a>
       </div>

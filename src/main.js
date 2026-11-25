@@ -43,7 +43,7 @@ function fillContactInfo() {
     linkedinEl.textContent = CVData.linkedin.replace('https://www.', '').replace('https://', '');
   }
 
-  const cvBtns = document.querySelectorAll('.btn-cv, a[download]');
+  const cvBtns = document.querySelectorAll('.btn-cv, a[download]:not(#lightboxDownloadBtn):not(.exp-doc-link)');
   cvBtns.forEach(btn => {
     if (CVData.cvPdfPath) {
       btn.setAttribute('href', CVData.cvPdfPath);
@@ -169,16 +169,19 @@ function updateFilterCounts() {
   if (typeof portfolioItems === 'undefined') return;
 
   const countAll = portfolioItems.length;
+  const countOps = portfolioItems.filter(item => item.category === 'ops').length;
   const countProduct = portfolioItems.filter(item => item.category === 'product').length;
   const countSocial = portfolioItems.filter(item => item.category === 'social').length;
   const countCaseStudy = portfolioItems.filter(item => item.category === 'case-study' || item.category === 'video').length;
 
   const elAll = document.getElementById('filterCountAll');
+  const elOps = document.getElementById('filterCountOps');
   const elProduct = document.getElementById('filterCountProduct');
   const elSocial = document.getElementById('filterCountSocial');
   const elCaseStudy = document.getElementById('filterCountCaseStudy');
 
   if (elAll) elAll.textContent = countAll;
+  if (elOps) elOps.textContent = countOps;
   if (elProduct) elProduct.textContent = countProduct;
   if (elSocial) elSocial.textContent = countSocial;
   if (elCaseStudy) {
@@ -206,9 +209,12 @@ function renderPortfolio() {
 
     let badgeIcon = 'sparkles';
     let badgeText = 'Kết Quả Studio';
-    if (item.gallery && item.gallery.length > 0) {
+    if (item.category === 'ops') {
+      badgeIcon = 'file-spreadsheet';
+      badgeText = 'Excel CRM · Case Study';
+    } else if (item.gallery && item.gallery.length > 0) {
       badgeIcon = 'layers';
-      badgeText = 'Bộ 4 Ảnh 1:1';
+      badgeText = `Bộ ${item.gallery.length} Ảnh 1:1`;
     } else if (item.isBanner) {
       badgeIcon = 'layout';
       badgeText = 'Banner 16:9';
@@ -350,6 +356,17 @@ function updateLightbox(index) {
   if (goalEl) goalEl.textContent = item.goal || '';
   if (toolsEl) toolsEl.textContent = item.tools || '';
   if (ecomEl) ecomEl.textContent = item.ecom || '';
+
+  const downloadBtn = document.getElementById('lightboxDownloadBtn');
+  if (downloadBtn) {
+    if (item.downloadUrl) {
+      downloadBtn.href = item.downloadUrl;
+      downloadBtn.style.display = 'inline-flex';
+    } else {
+      downloadBtn.href = '#';
+      downloadBtn.style.display = 'none';
+    }
+  }
 
   renderLightboxTabs(item);
 }

@@ -20,6 +20,28 @@ const CVData = {
 // Phân loại: product (Ảnh Sàn TMĐT 1:1), social (Banner & Social), case-study (Case Study & Video)
 // ============================================================
 const portfolioItems = [
+  // ── ITEM 0: Hệ thống Excel CRM & Tối ưu Tỷ lệ Khách Quay Lại ──
+  {
+    id: "excel-crm",
+    category: "ops",
+    categoryLabel: "Vận hành & Thực tế",
+    tag: "Excel CRM · Operations Tracker",
+    metric: "Retention 30% · SLA ≤ 15p",
+    title: "Hệ thống Excel CRM Quản lý Hạn dùng & Tối ưu Tỷ lệ Quay lại (30%)",
+    image: "assets/images/real/excel-crm-dashboard.png",
+    src: "assets/images/real/excel-crm-dashboard.png",
+    gallery: [
+      { label: "Dashboard KPI & Biểu đồ", src: "assets/images/real/excel-crm-dashboard.png" },
+      { label: "Sổ CRM & Cảnh báo Gia hạn", src: "assets/images/real/excel-crm-tracker.png" },
+    ],
+    downloadUrl: "assets/docs/CRM_QuanLyKhachHang_ChuVanPhung.xlsx",
+    gradient: "gradient-1",
+    tagline: "5 SKU Dịch vụ số · Tự động hóa cảnh báo gia hạn",
+    goal: "Xây dựng hệ thống theo dõi vòng đời khách hàng cho 5 gói dịch vụ số (ChatGPT Plus, Gemini Pro 3 Tháng/1 Năm, Canva Pro, Duolingo Super), tự động hóa cảnh báo hết hạn để giữ chân khách cũ vượt mục tiêu 15%.",
+    tools: "Microsoft Excel (INDEX/MATCH, COUNTIF, Conditional Formatting, Data Validation, Charts)",
+    ecom: "Vận dụng tư duy quản lý dữ liệu và theo dõi tiến độ (SLA bảo hành ≤ 15 phút, nhắc lịch 3 điểm chạm trước hạn 5 ngày), giúp đạt tỷ lệ khách quay lại thực tế 30% và kiểm soát chặt biên lợi nhuận từng SKU.",
+  },
+
   // ── ITEM A: Bộ 4 Ảnh Listing Shopee Chuẩn SEO ──
   {
     id: 0,

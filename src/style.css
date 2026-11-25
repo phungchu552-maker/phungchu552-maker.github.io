@@ -2046,6 +2046,167 @@ input, textarea { font-family: inherit; }
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* ── EXPERIENCE CASE STUDY BLOCK ─────────────────────────── */
+.exp-case-study {
+  margin-top: 1.25rem;
+  padding: 1.15rem 1.25rem;
+  background: rgba(11, 19, 43, 0.55);
+  border: 1px solid rgba(242, 101, 68, 0.22);
+  border-radius: var(--radius-md);
+}
+
+.case-study-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.9rem;
+}
+
+.case-study-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FF785A;
+}
+
+.case-study-badge svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .case-study-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .case-study-item--full {
+    grid-column: 1 / -1;
+  }
+}
+
+.case-study-item {
+  background: var(--clr-bg-input);
+  border: 1px solid var(--clr-border-dark);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1rem;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.case-study-item:hover {
+  border-color: rgba(242, 101, 68, 0.45);
+  transform: translateY(-1px);
+}
+
+.case-study-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: 0.5rem;
+}
+
+.case-study-title svg {
+  width: 16px;
+  height: 16px;
+  color: #FF785A;
+  flex-shrink: 0;
+}
+
+.case-study-desc {
+  font-size: 0.8rem;
+  color: var(--clr-text-main);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.pos-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.pos-step {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.22rem 0.55rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #F8FAFC;
+  white-space: nowrap;
+}
+
+.pos-step--end {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #6EE7B7;
+}
+
+.pos-step--branch {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #FCD34D;
+}
+
+.pos-arrow {
+  width: 13px;
+  height: 13px;
+  color: #94A3B8;
+  flex-shrink: 0;
+}
+
+.pos-branch-divider {
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0 0.2rem;
+  font-size: 0.8rem;
+}
+
+.exp-doc-action {
+  margin-top: 0.85rem;
+}
+
+.exp-doc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #FF785A;
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(242, 101, 68, 0.08);
+  border: 1px solid rgba(242, 101, 68, 0.25);
+  transition: all var(--transition);
+}
+
+.exp-doc-link svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.exp-doc-link:hover {
+  background: rgba(242, 101, 68, 0.16);
+  border-color: rgba(242, 101, 68, 0.5);
+  color: #FFA08A;
+  transform: translateY(-1px);
+}
+
 /* ── CERTIFICATIONS HIGHLIGHT (in Skills Section) ────────── */
 .certs-highlight {
   display: grid;
